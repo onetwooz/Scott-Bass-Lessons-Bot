@@ -3,19 +3,22 @@ from telebot import types
 import os
 import random
 
-bot = telebot.TeleBot('1194604461:AAFhtKcrxmeMaPcEDMdPDplnqHnHj6f72ZI')
+bot = telebot.TeleBot('TOKEN')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
-    bot.send_message(message.chat.id, 'Привет, {0.first_name}!\n Я - {1.first_name}, и могу показать видео по номеру урока из канала @scottbasslessons\nТы мне номер урока - я тебе видос. '.format(message.from_user, bot.get_me(), parse_mode="html"))
+    bot.send_message(message.chat.id, 'Hi, {0.first_name}!\n I am - {1.first_name}. I can show the video by the lesson number from the channel @scottbasslessons\nYou give me the lesson number - I give you a video. '.format(message.from_user, bot.get_me(), parse_mode="html"))
  
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"] #tralling
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
-    daddy_list =["кто тебя создал?","кто твой создатель?","кто твой отец?","кто твой папочка?"]
+    noth_list = ["86","87","88","89","90","91","92","93","94","95","96","97","98","101","102","103","104","105","106","107","108","109","110"]
+
+]
+    daddy_list =["who's is your creater?","who's your daddy?"]
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
            
@@ -271,44 +274,8 @@ def send_text(message):
     elif message.text.lower() == "85":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=juoiLkiMNIc')
     
-    elif message.text.lower() == "86":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-    
-    elif message.text.lower() == "87":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-
-    elif message.text.lower() == "88":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-    
-    elif message.text.lower() == "89":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-    
-    elif message.text.lower() == "90":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-    
-    elif message.text.lower() == "91":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-    
-    elif message.text.lower() == "92":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-    
-    elif message.text.lower() == "93":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-    
-    elif message.text.lower() == "94":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-    
-    elif message.text.lower() == "95":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-    
-    elif message.text.lower() == "96":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-    
-    elif message.text.lower() == "97":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-    
-    elif message.text.lower() == "98":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
+    elif message.text.lower() in noth_list:
+        bot.send_message(message.chat.id, 'From 86 to 98 and from 101 to 110 there are no vidos🤷🏾‍♂️')
     
     elif message.text.lower() == "99":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=_EmBwLTLgxg')
@@ -317,34 +284,7 @@ def send_text(message):
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=LAlQqWmh_Io')
 
     elif message.text.lower() == "101":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-
-    elif message.text.lower() == "102":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-
-    elif message.text.lower() == "103":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-
-    elif message.text.lower() == "104":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-
-    elif message.text.lower() == "105":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-
-    elif message.text.lower() == "106":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-
-    elif message.text.lower() == "107":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-
-    elif message.text.lower() == "108":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-
-    elif message.text.lower() == "109":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
-
-    elif message.text.lower() == "110":
-        bot.send_message(message.chat.id, 'С 86 по 98 и с 101 по 110 видосов нет🤷🏾‍♂️')
+        bot.send_message(message.chat.id, 'From 86 to 98 and from 101 to 110 there are no vidos🤷🏾‍♂️')
 
     elif message.text.lower() == "111":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
