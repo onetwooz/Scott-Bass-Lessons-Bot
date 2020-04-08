@@ -17,7 +17,6 @@ def send_text(message):
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
     noth_list = ["86","87","88","89","90","91","92","93","94","95","96","97","98","101","102","103","104","105","106","107","108","109","110"]
 
-]
     daddy_list =["who's is your creater?","who's your daddy?"]
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
@@ -273,6 +272,9 @@ def send_text(message):
     
     elif message.text.lower() == "85":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=juoiLkiMNIc')
+        
+    elif message.text.lower() in noth_list:
+        bot.send_message(message.chat.id, 'From 86 to 98 and from 101 to 110 there are no vidos🤷🏾‍♂️')        
     
     elif message.text.lower() == "99":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=_EmBwLTLgxg')
