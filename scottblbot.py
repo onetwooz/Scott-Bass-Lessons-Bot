@@ -274,9 +274,6 @@ def send_text(message):
     elif message.text.lower() == "85":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=juoiLkiMNIc')
     
-    elif message.text.lower() in noth_list:
-        bot.send_message(message.chat.id, 'From 86 to 98 and from 101 to 110 there are no vidos🤷🏾‍♂️')
-    
     elif message.text.lower() == "99":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=_EmBwLTLgxg')
     
