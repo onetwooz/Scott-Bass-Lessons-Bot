@@ -8,14 +8,14 @@ bot = telebot.TeleBot('1232435285:AAGW8TpZ1ZQ-aUUuDYstuQS8k7vmq6jy0dg')
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
-    bot.send_message(message.chat.id, 'Hi, {0.first_name}!\nI am - {1.first_name}. I can show the video by the lesson number from the channel @scottbasslessons\nMy collection has 160 video lessons\nYou give me the lesson number - I give you a video. '.format(message.from_user, bot.get_me(), parse_mode="html"))
+    bot.send_message(message.chat.id, 'Hi, {0.first_name}!\nI am - {1.first_name}. I can show the video by the lesson number from the channel @scottbasslessons\nYou give me the lesson number - I give you a video. '.format(message.from_user, bot.get_me(), parse_mode="html"))
  
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"] #tralling
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
-    noth_list = ["86","87","88","89","90","91","92","93","94","95","96","97","98","101","102","103","104","105","106","110","114","121","122","123","129","131","137","139","140","141","142","143","144","146","150","151","152","153","154","155","156","157","158","159"]
+    noth_list = ["86","87","88","89","90","91","92","93","94","95","96","97","98","101","102","103","104","105"]
     daddy_list =["who's is your creater?","who's your daddy?"]
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
