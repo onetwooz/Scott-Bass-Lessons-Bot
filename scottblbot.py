@@ -3,7 +3,7 @@ from telebot import types
 import os
 import random
 
-bot = telebot.TeleBot('TOKEN')
+bot = telebot.TeleBot('1023733994:AAFCmwj-kiOfOW57APcXvZqnyBWCZnOMiBU')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
@@ -17,7 +17,6 @@ def send_text(message):
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
     noth_list = ["86","87","88","89","90","91","92","93","94","95","96","97","98","101","102","103","104","105","106","107","108","109","110"]
 
-]
     daddy_list =["who's is your creater?","who's your daddy?"]
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
