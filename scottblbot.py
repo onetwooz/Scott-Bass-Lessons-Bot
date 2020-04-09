@@ -15,7 +15,7 @@ def send_text(message):
     fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"] #tralling
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
-    noth_list = ["86","87","88","89","90","91","92","93","94","95","96","97","98","110","114","121","122","123","129","131","137","139","140","141","142","143","144","146","150","151","152","153","154","155","156","157","158","159"]
+    noth_list = ["110","114","121","122","123","129","131","137","139","140","141","142","143","144","146","150","151","152","153","154","155","156","157","158","159"]
 
     daddy_list =["who's is your creater?","who's your daddy?"]
     if message.text.lower() == "дай":
@@ -276,9 +276,45 @@ def send_text(message):
     elif message.text.lower() == "85":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=juoiLkiMNIc')
         
-    elif message.text.lower() in noth_list:
-        bot.send_message(message.chat.id, 'Sorry, this video lesson is not there, try a different number 🤷🏾‍♂️')        
-    
+    elif message.text.lower() == "86":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=4-6PqZZQ2j4&t')
+        
+    elif message.text.lower() == "87":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=NKOUdzIYqT4&t')
+        
+    elif message.text.lower() == "88":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=4RAV3zNe1v4')
+        
+    elif message.text.lower() == "89":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=TZBpy_8Xm_E')
+        
+    elif message.text.lower() == "90":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=Edm4XnCKdfM')
+        
+    elif message.text.lower() == "91":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AaJNJs5TZ8s')
+        
+    elif message.text.lower() == "92":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=-vUNUo3TbyI')
+        
+    elif message.text.lower() == "93":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=GrcL3GcDEEY')
+        
+    elif message.text.lower() == "94":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AvIma2WIgws&t')
+        
+    elif message.text.lower() == "95":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=hAXNeCuBg3Q')
+        
+    elif message.text.lower() == "96":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=hJ-uXjEIz-A')
+        
+    elif message.text.lower() == "97":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=FU3Pv8N473U')
+        
+    elif message.text.lower() == "98":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=OIhaobSfzEI')        
+         
     elif message.text.lower() == "99":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=_EmBwLTLgxg')
     
@@ -388,8 +424,11 @@ def send_text(message):
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=tNG3kD-dfsQ')
         
     elif message.text.lower() == "160":
-        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=xWfRxy9zEmE')        
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=xWfRxy9zEmE')
         
+    elif message.text.lower() in noth_list:
+        bot.send_message(message.chat.id, 'Sorry, this video lesson is not there, try a different number 🤷🏾‍♂️')        
+            
     elif message.text.lower() in fst_list:
         bot.send_message(message.chat.id, '🤜🏾')
         
