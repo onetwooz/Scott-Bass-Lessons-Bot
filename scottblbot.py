@@ -18,7 +18,10 @@ def send_text(message):
     noth_list = ["86","87","88","89","90","91","92","93","94","95","96","97","98","101","102","103","104","105","106","110","114","121","122","123","129","131","137","139","140","141","142","143","144","146","150","151","152","153","154","155","156","157","158","159"]
 
     daddy_list =["who's is your creater?","who's your daddy?"]
-    if message.text.lower() == "1":
+    if message.text.lower() == "дай"
+        bot.send_message(message.chat.id, 'http://scottsbasslessons.acemlna.com/lt.php?s=f9562afb580de308c86d8005457849e4&i=7251A7261A22A411982')
+    
+    elif message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
            
     elif message.text.lower() == "2":
