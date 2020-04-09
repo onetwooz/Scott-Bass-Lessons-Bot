@@ -282,9 +282,6 @@ def send_text(message):
     elif message.text.lower() == "100":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=LAlQqWmh_Io')
 
-    elif message.text.lower() == "101":
-        bot.send_message(message.chat.id, 'From 86 to 98 and from 101 to 110 there are no vidos🤷🏾‍♂️')
-
     elif message.text.lower() == "111":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
         
