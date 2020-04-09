@@ -285,6 +285,24 @@ def send_text(message):
     elif message.text.lower() == "100":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=LAlQqWmh_Io')
         
+    elif message.text.lower() == "101":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=sNxNBnyE8gs')
+        
+    elif message.text.lower() == "102":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=fQEVVTiSp_w')
+        
+    elif message.text.lower() == "103":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=eBpA1s7LyUs')
+        
+    elif message.text.lower() == "104":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=OjpQqrXJ5-Y')
+        
+    elif message.text.lower() == "105":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=7RpTyu6U-Jg')
+        
+    elif message.text.lower() == "106":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=0r91zDLUdDs')        
+        
     elif message.text.lower() == "107":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=0YFNT-gYxtk')
         
