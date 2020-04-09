@@ -8,7 +8,7 @@ bot = telebot.TeleBot('1232435285:AAGW8TpZ1ZQ-aUUuDYstuQS8k7vmq6jy0dg')
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
-    bot.send_message(message.chat.id, 'Hi, {0.first_name}!\nI am - {1.first_name}. I can show the video by the lesson number from the channel @scottbasslessons\nYou give me the lesson number - I give you a video. '.format(message.from_user, bot.get_me(), parse_mode="html"))
+    bot.send_message(message.chat.id, 'Hi, {0.first_name}!\nI am - {1.first_name}. I can show the video by the lesson number from the channel @scottbasslessons\nIn my collection there are almost all video lessons from 1 to 160\nYou give me the lesson number - I give you a video. '.format(message.from_user, bot.get_me(), parse_mode="html"))
  
 @bot.message_handler(content_types=['text'])
 def send_text(message):
@@ -274,7 +274,7 @@ def send_text(message):
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=juoiLkiMNIc')
         
     elif message.text.lower() in noth_list:
-        bot.send_message(message.chat.id, 'From 86 to 98 and from 101 to 110 there are no vidos 🤷🏾‍♂️')        
+        bot.send_message(message.chat.id, 'Sorry, this video lesson is not there, try a different number 🤷🏾‍♂️')        
     
     elif message.text.lower() == "99":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=_EmBwLTLgxg')
@@ -386,6 +386,6 @@ def send_text(message):
         bot.send_sticker(message.chat.id, sti)        
         
     else:
-        bot.send_message(message.chat.id, 'I have lessons from 1 to 111 💁🏾‍♂️') 
+        bot.send_message(message.chat.id, 'I have almost all the lessons from 1 to 160 💁🏾‍♂️') 
 
 bot.polling( none_stop = True) 
