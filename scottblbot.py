@@ -15,7 +15,7 @@ def send_text(message):
     fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"] #tralling
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
-    noth_list = ["86","87","88","89","90","91","92","93","94","95","96","97","98","101","102","103","104","105","106","107","108","109","110"]
+    noth_list = ["86","87","88","89","90","91","92","93","94","95","96","97","98","101","102","103","104","105","106","110","114","121","122","123","129","131","137","139","140","141","142","143","144","146","150","151","152","153","154","155","156","157","158","159"]
 
     daddy_list =["who's is your creater?","who's your daddy?"]
     if message.text.lower() == "1":
@@ -281,9 +281,93 @@ def send_text(message):
     
     elif message.text.lower() == "100":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=LAlQqWmh_Io')
+        
+    elif message.text.lower() == "107":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=0YFNT-gYxtk')
+        
+    elif message.text.lower() == "108":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=nLPbTNaK2_U')
+        
+    elif message.text.lower() == "109":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=NI-OEoWWil8')
 
     elif message.text.lower() == "111":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
+        
+    elif message.text.lower() == "112":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=x2vUEV1hsSU')
+        
+    elif message.text.lower() == "113":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=-EVOAtBOFRU')
+        
+    elif message.text.lower() == "115":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=1j9YaagzdS8')
+        
+    elif message.text.lower() == "116":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=0hURERIDcHo&t')
+        
+    elif message.text.lower() == "117":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=EKbvhjCTB3Q&t')
+        
+    elif message.text.lower() == "118":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=E_KVtMflcdM')
+        
+    elif message.text.lower() == "119":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=x4pVcu7xJZU')
+        
+    elif message.text.lower() == "120":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=R-nEtCxascc')
+        
+    elif message.text.lower() == "124":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=SzHu57zs-bo')
+        
+    elif message.text.lower() == "125":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=1Mb8t8rHW_Q')
+        
+    elif message.text.lower() == "126":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=CJQNYSO3dpU')
+        
+    elif message.text.lower() == "127":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=CxWdiSZbjXw')
+        
+    elif message.text.lower() == "128":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=igSDjgL1qrs')
+        
+    elif message.text.lower() == "130":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=WlZXG9aqmTc')
+        
+    elif message.text.lower() == "132":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=qojVJhUzeIc')
+        
+    elif message.text.lower() == "133":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=6UiC5UjFIfI')
+        
+    elif message.text.lower() == "134":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=7W6rdiHlqWg')
+        
+    elif message.text.lower() == "135":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=gGfF0ZgiDfU')
+        
+    elif message.text.lower() == "136":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=3X3DYe-vJKc')
+        
+    elif message.text.lower() == "138":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=X_6oOzG0BDs')
+        
+    elif message.text.lower() == "145":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=JqMf0Cviw-Y')
+        
+    elif message.text.lower() == "147":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=VmBy7XA0ceI')
+        
+    elif message.text.lower() == "148":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=mECCrweIRWg')
+        
+    elif message.text.lower() == "149":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=tNG3kD-dfsQ')
+        
+    elif message.text.lower() == "160":
+        bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=xWfRxy9zEmE')        
         
     elif message.text.lower() in fst_list:
         bot.send_message(message.chat.id, '🤜🏾')
