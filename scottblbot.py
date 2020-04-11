@@ -19,8 +19,9 @@ def send_text(message):
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
     noth_list = ["110","114","121","122","123","129","131","137","139","140","141","142","143","144","146","150","151","152","153","154","155","156","157","158","159"]
     daddy_list =["who is your creater?","who is your daddy?"]
-    if int(message.text.lower()) > 160
-        bot.send_message(message.chat.id, '4545')
+    message.text.lower() = int(message.text.lower())
+    if message.text.lower() > 160
+        bot.send_message(message.chat.id, '43435354353')
     
     elif message.text.lower() == "дай":
         bot.send_message(message.chat.id, 'http://scottsbasslessons.acemlna.com/lt.php?s=f9562afb580de308c86d8005457849e4&i=7251A7261A22A411982')
