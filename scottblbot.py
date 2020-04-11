@@ -19,7 +19,10 @@ def send_text(message):
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
     noth_list = ["110","114","121","122","123","129","131","137","139","140","141","142","143","144","146","150","151","152","153","154","155","156","157","158","159"]
     daddy_list =["who is your creater?","who is your daddy?"]
-    if message.text.lower() == "дай":
+    if int(message.text.lower()) > 160
+        bot.send_message(message.chat.id, '4545')
+    
+    elif message.text.lower() == "дай":
         bot.send_message(message.chat.id, 'http://scottsbasslessons.acemlna.com/lt.php?s=f9562afb580de308c86d8005457849e4&i=7251A7261A22A411982')
         
     elif message.text.lower() == "1":
@@ -446,9 +449,6 @@ def send_text(message):
         sti = open('static/sticker.webp', 'rb')
         bot.send_sticker(message.chat.id, sti)
         
-    elif int(message.text) > 160
-        bot.send_message(message.chat.id, '4545')
-    
     else:
         if i < 3:
             bot.send_message(message.chat.id, 'I have almost all the lessons from 1 to 160 💁🏾‍♂️')
