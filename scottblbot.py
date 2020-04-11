@@ -4,6 +4,7 @@ import os
 import random
 
 bot = telebot.TeleBot('1232435285:AAGW8TpZ1ZQ-aUUuDYstuQS8k7vmq6jy0dg')
+i = 1
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
@@ -12,6 +13,7 @@ def start_message(message):
  
 @bot.message_handler(content_types=['text'])
 def send_text(message):
+    global i
     fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"] #tralling
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
