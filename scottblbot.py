@@ -444,8 +444,11 @@ def send_text(message):
         
     elif message.text.lower() == "тиай":
         sti = open('static/sticker.webp', 'rb')
-        bot.send_sticker(message.chat.id, sti)        
+        bot.send_sticker(message.chat.id, sti)
         
+    elif int(message.text) > 160
+        bot.send_message(message.chat.id, '4545')
+    
     else:
         if i < 3:
             bot.send_message(message.chat.id, 'I have almost all the lessons from 1 to 160 💁🏾‍♂️')
