@@ -448,13 +448,13 @@ def send_text(message):
         bot.send_sticker(message.chat.id, sti)
          
     else:
-        if i < 3 or i < 6:
+        if i < 3 #or i < 6:
             bot.send_message(message.chat.id, 'I have almost all the lessons from 1 to 160 💁🏾‍♂️')
             i += 1
             
-        elif i = 5:
-            bot.send_message(message.chat.id, 'Just tell me the lesson number from 1 to 160.')
-            i += 1
+        #elif i = 5:
+            #bot.send_message(message.chat.id, 'Just tell me the lesson number from 1 to 160.')
+            #i += 1
        
         else:
             i = 1
