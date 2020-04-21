@@ -31,7 +31,7 @@ def send_text(message):
     #  пороверяем на полученого юзера, что он не учасник ваще ни какой может быть( left, administrator, member, creator)
     if user.status == 'left':
         # '`' + str(message.chat.id) + '`' данная комбинация позволяет задать шрифт даже для вставки инфы
-        bot.send_message(message.chat.id, '`' + str(message.chat.id) + '`' + ' @scottbasslessons', parse_mode='MarkdownV2')
+        bot.send_message(message.chat.id,'Hi, you found me! Congratulations! I will help you find bass lessons if you join the channel @scottbasslessons')
 
 
     elif db.count(message.chat.username) == 0:
