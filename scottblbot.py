@@ -25,7 +25,51 @@ def send_text(message):
     noth_list = ["110","114","121","122","123","129","131","137","139","140","141","142","143","144","146","150","151","152","153","154","155","156","157","158","159"]
     daddy_list =["who is your creater?","who is your daddy?"]
     
-    if message.text.lower() == "дай":
+    user = bot.get_chat_member('@scottbasslessons', message.chat.id)
+
+
+    #  пороверяем на полученого юзера, что он не учасник ваще ни какой может быть( left, administrator, member, creator)
+    if user.status == 'left':
+        # '`' + str(message.chat.id) + '`' данная комбинация позволяет задать шрифт даже для вставки инфы
+        bot.send_message(message.chat.id, '`' + str(message.chat.id) + '`' + ' @scottbasslessons', parse_mode='MarkdownV2')
+
+
+    if db.count(message.chat.username) == 0:
+        db.append(message.chat.username)
+        dbId.append(message.chat.id)
+
+    print("Writer: " + message.chat.username + " write: " + message.text + "\n")
+    print(db)
+
+    elif message.text.lower() == 'list':
+        if adminList.count(message.chat.id) != 0:
+
+
+            leftUser = []
+            memberUser = []
+
+            for m in dbId:
+                user = bot.get_chat_member('@scottbasslessons', m)
+
+                if user.status == 'member' or user.status == 'administrator' or user.status == 'creator':
+                    memberUser.append(m)
+                if user.status == 'left':
+                    leftUser.append(m)
+
+
+
+            outstr = "member: \n" + str(memberUser) + "\n" + "left: " + str(leftUser)
+
+
+
+            bot.send_message(message.chat.id, outstr)
+
+
+
+        else: bot.send_message(message.chat.id, 'Нету прав на просмотр')
+    
+    
+    elif message.text.lower() == "дай":
         bot.send_message(message.chat.id, 'http://scottsbasslessons.acemlna.com/lt.php?s=f9562afb580de308c86d8005457849e4&i=7251A7261A22A411982')
         
     elif message.text.lower() == "1":
