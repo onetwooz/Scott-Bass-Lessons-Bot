@@ -34,7 +34,7 @@ def send_text(message):
         bot.send_message(message.chat.id, '`' + str(message.chat.id) + '`' + ' @scottbasslessons', parse_mode='MarkdownV2')
 
 
-    if db.count(message.chat.username) == 0:
+    elif db.count(message.chat.username) == 0:
         db.append(message.chat.username)
         dbId.append(message.chat.id)
 
