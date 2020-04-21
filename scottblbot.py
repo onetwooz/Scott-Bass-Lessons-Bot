@@ -38,8 +38,6 @@ def send_text(message):
         db.append(message.chat.username)
         dbId.append(message.chat.id)
 
-    print("Writer: " + message.chat.username + " write: " + message.text + "\n")
-    print(db)
 
     elif message.text.lower() == 'list':
         if adminList.count(message.chat.id) != 0:
@@ -53,7 +51,7 @@ def send_text(message):
 
                 if user.status == 'member' or user.status == 'administrator' or user.status == 'creator':
                     memberUser.append(m)
-                if user.status == 'left':
+                elif user.status == 'left':
                     leftUser.append(m)
 
 
@@ -66,7 +64,8 @@ def send_text(message):
 
 
 
-        else: bot.send_message(message.chat.id, 'Нету прав на просмотр')
+        else: 
+            bot.send_message(message.chat.id, 'Нету прав на просмотр')
     
     
     elif message.text.lower() == "дай":
