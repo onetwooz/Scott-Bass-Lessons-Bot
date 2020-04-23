@@ -3,7 +3,7 @@ from telebot import types
 import os
 import random
 
-bot = telebot.TeleBot('1232435285:AAGfgLkoSJaFKYhEmLNPuSSovglICZpiWIw')
+bot = telebot.TeleBot('')
 i = 1
 db = []
 dbId = []
