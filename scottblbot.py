@@ -2,8 +2,9 @@ import telebot
 from telebot import types
 import os
 import random
+Import cfg
 
-bot = telebot.TeleBot('1232435285:AAGfgLkoSJaFKYhEmLNPuSSovglICZpiWIw')
+bot = telebot.TeleBot(cfg.token)
 i = 1
 db = []
 dbId = []
@@ -56,7 +57,7 @@ def send_text(message):
 
 
 
-            outstr = "member: \n" + str(memberUser) + "\n" + "left: " + str(leftUser)
+            outstr = "👨🏾‍🎤:" + str(memberUser) + "\n" + "🧟‍♂️:" + str(leftUser)
 
 
 
