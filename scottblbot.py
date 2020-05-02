@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 import os
 import random
-Import cfg
+import cfg
 
 bot = telebot.TeleBot(cfg.token)
 i = 1
