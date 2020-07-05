@@ -2,9 +2,8 @@ import telebot
 from telebot import types
 import os
 import random
-import cfg
 
-bot = telebot.TeleBot(cfg.token)
+bot = telebot.TeleBot(1232435285:AAGfgLkoSJaFKYhEmLNPuSSovglICZpiWIw)
 i = 1
 db = []
 dbId = []
